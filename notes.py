@@ -3,8 +3,8 @@ def main():
 
     try:
         while True:
-            x = input("Notes: ")
-            y = "Was soll ich machen?  "
+            x = input("Was soll ich machen? ")
+            y = "Notes:  "
             with open("notes.csv", "a") as file:
                 writer = csv.writer(file)
                 writer.writerow([y, x])
